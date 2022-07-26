@@ -1,21 +1,17 @@
 import "./App.css";
 import Homepage from "./pages/homepage/homepage";
-import NavBar from "./components/NavBar.component";
 import { Route, Routes } from "react-router-dom";
-
-const Register = () => {
-	<div>SOmehtoih register</div>;
-};
+import CompanyInfo from "./components/Register/Corporate/CompanyInfo.component";
+import LoginDetails from "./components/Register/Corporate/LoginDetails.component";
 
 function App() {
 	return (
 		<div>
-			<NavBar />
 			<Routes>
 				<Route path="/" element={<Homepage />}></Route>
-				<Route path="register" element={<Register />}></Route>
+				<Route path="register/corporate/1" element={<CompanyInfo />}></Route>
+				<Route path="register/corporate/2" element={<LoginDetails />}></Route>
 			</Routes>
-			<Homepage />
 		</div>
 	);
 }

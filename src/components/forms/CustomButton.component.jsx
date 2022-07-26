@@ -3,7 +3,7 @@ import React from "react";
 const CustomButton = ({ children, ...otherProps }) => {
 	return (
 		<div>
-			<a {...otherProps}>{children}</a>
+			<button {...otherProps}>{children}</button>
 		</div>
 	);
 };

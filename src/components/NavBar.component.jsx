@@ -6,7 +6,7 @@ const NavBar = () => {
 	return (
 		<nav class="relative mx-auto  px-12 shadow">
 			<div className="flex items-center justify-between">
-				<div className="pt-2 w-20">
+				<div className=" w-10">
 					<Logo />{" "}
 				</div>
 				{/* <!--menu items--> */}
