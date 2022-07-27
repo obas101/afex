@@ -53,13 +53,13 @@ const NavMenu = () => {
 	];
 
 	return (
-		<div className="flex bg-white p-2 flex-col max-h-24 w-full space-y-2">
+		<div className="flex bg-white p-2 flex-col max-h-24 space-y-2">
 			<div className="flex flex-row space-x">
 				<h3 className="text-xs font-bold flex pt-2 pr-2">Board</h3>
 				{buttonlinks.map((button, index) => (
 					<CustomButton
 						key={index}
-						className="px-4 active:bg-red-600
+						className="px-4 active:bg-red-300 visited:bg-red-600
       py-2
       text-black
       font-bold

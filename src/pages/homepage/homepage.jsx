@@ -6,6 +6,8 @@ import BaseSideBar from "../../components/BaseSidebar";
 import BaseSideLinks from "../../components/BaseSideLinks";
 import BaseFeeds from "../../components/BaseLiveFeeds";
 import NavMenu from "../../components/NavMenu";
+import ProductTable from "../../components/ProductTable";
+import TradeLog from "../../components/TradeLog";
 
 const Homepage = () => {
 	return (
@@ -15,10 +17,14 @@ const Homepage = () => {
 				<div id="main-content" className="flex gap-2">
 					<BaseSideBar />
 					<BaseSideLinks />
-					<NavMenu />
+					<div className="flex flex-col w-full gap-2">
+						<NavMenu />
+						<ProductTable />
+						<TradeLog />
+					</div>
 				</div>
 
-				<div className="absolute bottom-0">
+				<div className="fixed bottom-0">
 					<BaseFeeds />
 				</div>
 			</div>
