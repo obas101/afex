@@ -1,7 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
-import CustomButton from "../../forms/CustomButton.component";
-
+import steps3 from "../../../assets/Steps3.svg";
 const OtpVerification = () => {
 	return (
 		<div className="h-screen bg-bgRegisterColor">
@@ -47,7 +46,8 @@ const OtpVerification = () => {
 				</div>
 
 				<div className="text-center py-4">
-					<p className="text-xs font-bold">2/4</p>
+					<p className="text-xs font-bold my-6">2/4</p>
+					<img className="max-w-xs" src={steps3} alt="" />
 				</div>
 			</div>
 		</div>

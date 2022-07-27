@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
-import CustomButton from "../../forms/CustomButton.component";
+import woman from "../../../assets/Clipped.svg";
+import step4 from "../../../assets/Steps4.svg";
 
 const RegistrationSuccessful = () => {
 	return (
@@ -10,44 +11,29 @@ const RegistrationSuccessful = () => {
 					<Logo />{" "}
 				</div>
 
-				<div className="w-96 h-100 bg-white px-8 py-6 space-y-4">
+				<div className="w-96 h-100 bg-white px-8 py-6 space-y-4 flex flex-col items-center justify-center">
+					<div className="w-44">
+						<img src={woman} alt="" />
+					</div>
+
 					<div className="text-center py-2">
-						<h1 className="font-bold text-xl">Account details</h1>
-						<h2 className="font-bold text-xs">
-							Sign up for an account and start trading today
+						<h1 className="font-bold text-xl">Registration Complete</h1>
+						<h2 className=" mt-2 text-xs">
+							Dear [fName]. Your registration is now complete. You may proceed
+							to your dashboard and start trading commodities.{" "}
 						</h2>
 					</div>
 
-					{/* Company name */}
-					<div>
-						<p className="text-xs font-medium">
-							Enter the 4-digit code that was sent to name@mymail.com
-						</p>
-
-						{/* code */}
-
-						<div className="mt-3">
-							<input
-								type="text"
-								class=" form-control block w-full px-4 py-3 text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-								placeholder="Enter code"
-							/>
-						</div>
-					</div>
-
-					<div>
-						<p className="text-xs text-">Resend Code</p>
-						<p className="text-xs">Verify via Phone Call</p>
-					</div>
-
-					<div className="flex justify-between mt-50">
-						<span className="text-black-600 font-bold text-sm">BACK</span>
-						<span className="text-red-600 font-bold text-sm">NEXT STEP</span>
+					<div className="text-center mt-50">
+						<span className="text-red-600 font-bold text-sm">
+							GO TO DASHBOARD
+						</span>
 					</div>
 				</div>
 
 				<div className="text-center py-4">
-					<p className="text-xs font-bold">2/4</p>
+					<p className="text-xs font-bold my-6">4/4</p>
+					<img className="max-w-xs" src={step4} alt="" />
 				</div>
 			</div>
 		</div>

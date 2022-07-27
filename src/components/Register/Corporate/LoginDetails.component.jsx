@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
-import CustomButton from "../../forms/CustomButton.component";
+import step2 from "../../../assets/Steps2.svg";
 
 const LoginDetails = () => {
 	return (
@@ -69,7 +69,8 @@ const LoginDetails = () => {
 				</div>
 
 				<div className="text-center py-4">
-					<p className="text-xs font-bold">2/4</p>
+					<p className="text-xs font-bold my-6">2/4</p>
+					<img className="max-w-xs" src={step2} alt="" />
 				</div>
 			</div>
 		</div>
