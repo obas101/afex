@@ -16,6 +16,9 @@ module.exports = {
 				textSecColor: "#778CA2",
 				textRed: "#D71E0E",
 			},
+			height: {
+				100: "26rem",
+			},
 		},
 	},
 	plugins: [],

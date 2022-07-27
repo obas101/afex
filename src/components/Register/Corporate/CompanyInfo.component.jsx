@@ -10,7 +10,7 @@ const CompanyInfo = () => {
 					<Logo />{" "}
 				</div>
 
-				<div className="w-96 bg-white px-8 py-6 space-y-4">
+				<div className="w-96 h-100 bg-white px-8 py-6 space-y-4">
 					<div className="text-center py-2">
 						<h1 className="font-bold text-xl">Register new account</h1>
 						<h2 className="font-bold text-xs">

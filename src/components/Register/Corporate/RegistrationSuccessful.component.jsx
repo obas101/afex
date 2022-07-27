@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
 import CustomButton from "../../forms/CustomButton.component";
 
-const OtpVerification = () => {
+const RegistrationSuccessful = () => {
 	return (
 		<div className="h-screen bg-bgRegisterColor">
 			<div className="h-screen flex flex-col justify-center items-center">
@@ -54,4 +54,4 @@ const OtpVerification = () => {
 	);
 };
 
-export default OtpVerification;
+export default RegistrationSuccessful;

@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import CompanyInfo from "./components/Register/Corporate/CompanyInfo.component";
 import LoginDetails from "./components/Register/Corporate/LoginDetails.component";
 import OtpVerification from "./components/Register/Corporate/otp.component";
+import RegistrationSuccessful from "./components/Register/Corporate/RegistrationSuccessful.component";
 
 function App() {
 	return (
@@ -15,6 +16,10 @@ function App() {
 				<Route
 					path="register/corporate/3"
 					element={<OtpVerification />}
+				></Route>
+				<Route
+					path="register/corporate/4"
+					element={<RegistrationSuccessful />}
 				></Route>
 			</Routes>
 		</div>
