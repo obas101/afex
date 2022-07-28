@@ -1,5 +1,4 @@
 import React from "react";
-import CustomButton from "./forms/CustomButton.component";
 
 const TradeLog = () => {
 	return (
