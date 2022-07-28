@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
 import CustomButton from "../../forms/CustomButton.component";
 import step1 from "../../../assets/Steps1.svg";
@@ -10,7 +10,7 @@ export class CompanyInfo extends Component {
 	};
 
 	render() {
-		const { values } = this.props;
+		// const { values, handleChange } = this.props;
 		return (
 			<div className="h-screen bg-bgRegisterColor">
 				<div className="h-screen flex flex-col justify-center items-center">
@@ -30,11 +30,13 @@ export class CompanyInfo extends Component {
 								Select select the category that best describes you
 							</p>
 							<div className="flex flex-row mt-2">
-								<CustomButton
+								<a
+									href="#tab-1"
+									data-bs-target="#tab-1"
 									className="px-8
       py-2
       text-black
-    border
+    	border
     border-black-400
     mr-2
       font-normal
@@ -45,8 +47,10 @@ export class CompanyInfo extends Component {
       "
 								>
 									Individual
-								</CustomButton>
-								<CustomButton
+								</a>
+								<a
+									href="#tab-2"
+									data-bs-target="#tab-2"
 									className="px-8
       py-2
       text-black
@@ -61,11 +65,13 @@ export class CompanyInfo extends Component {
       "
 								>
 									Corporate
-								</CustomButton>
+								</a>
 							</div>
 						</div>
+
+						{/* First tab */}
 						{/* Company name */}
-						<div>
+						<div id="tab-1">
 							<p className="text-xs font-medium">Company name</p>
 
 							{/* email address */}
@@ -75,14 +81,14 @@ export class CompanyInfo extends Component {
 									type="text"
 									class=" form-control block w-full px-4 py-3 text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
 									placeholder="Enter your email"
-									onChange={handleChange("email")}
-									defaultValue={values.email}
+									// onChange={handleChange("email")}
+									// defaultValue={values.email}
 								/>
 							</div>
 						</div>
 
 						{/* type of business and date  */}
-						<div className="flex flex-row">
+						<div id="tab-2" className="flex flex-row">
 							<div>
 								<p className="text-xs font-medium">Type of Business</p>
 
@@ -117,10 +123,65 @@ export class CompanyInfo extends Component {
 						</div>
 					</div>
 
-					<div className="text-center py-4">
-						<p className="text-xs font-bold my-6">1/4</p>
-						<img className="max-w-xs" src={step1} alt="" />
+					{/* second tab */}
+
+					{/* your first name and last name */}
+					<div id="tab-2" className="flex flex-row">
+						<div>
+							<p className="text-xs font-medium">Your First Name</p>
+
+							{/*  */}
+
+							<div className="mt-3 mr-6">
+								<input
+									type="text"
+									class=" form-control block w-full px-4 py-3 text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+									placeholder="Enter your First Name"
+								/>
+							</div>
+						</div>
+
+						{/* last name */}
+						<div>
+							<p className="text-xs font-medium">Your Last Name</p>
+
+							{/* email address */}
+
+							<div className="mt-3">
+								<input
+									type="text"
+									class=" form-control block w-full px-4 py-3 text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+									placeholder="Enter your Last Name"
+								/>
+							</div>
+						</div>
 					</div>
+					<div className="text-center py-3">
+						<span className="text-red-600 font-bold text-sm">NEXT STEP</span>
+					</div>
+
+					{/* Your name */}
+					<div id="tab-1">
+						<p className="text-xs font-medium">Your Email</p>
+
+						{/* email address */}
+
+						<div className="mt-3">
+							<input
+								type="text"
+								class=" form-control block w-full px-4 py-3 text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+								placeholder="Enter your email"
+								// onChange={handleChange("email")}
+								// defaultValue={values.email}
+							/>
+						</div>
+					</div>
+				</div>
+
+				{/* next */}
+				<div className="text-center py-4">
+					<p className="text-xs font-bold my-6">1/4</p>
+					<img className="max-w-xs" src={step1} alt="" />
 				</div>
 			</div>
 		);
