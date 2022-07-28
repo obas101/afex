@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
-import CustomButton from "../../forms/CustomButton.component";
 import step1 from "../../../assets/Steps1.svg";
 
 export class CompanyInfo extends Component {
